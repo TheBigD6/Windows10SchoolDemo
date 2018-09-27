@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="SchoolDemoWin10.Views.LogonPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SchoolDemoWin10.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="User Name:" FontSize="42" />
+                <TextBox x:Name="txbxUsername" FontSize="42" Margin="20,0,0,0" PlaceholderText="Please Type Here. . ."/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Password:" FontSize="42" />
+                <PasswordBox x:Name="pwbxPassword" FontSize="42" Margin="52,0,0,0" PlaceholderText="Please Type Here. . ." />
+            </StackPanel>
+            <Button Content="Click Me" Click="Logon_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
